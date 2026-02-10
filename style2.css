@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "reset.css";
 
 html { overflow-y: scroll }
 body { background: #2f3542 url(bg_body.png) repeat }

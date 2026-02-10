@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import "reset.css";
+
+html { overflow-y: scroll }
+body { background: #2f3542 url(bg_body.png) repeat }
+
+#header {
+	height: 400px;
+	background: #000000 no-repeat center top
+}
+
+#footer {
+	height: 50px;
+	line-height: 50px;
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	color: #141414
+}
+
+.header_contents {
+	position: relative;
+	width: 960px;
+	margin: 0 auto
+}
+
+.util {
+	position: absolute;
+	top: 10px;
+	right: 0
+}
+
+.gnb {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #EDEBEB;
+	*zoom: 1
+}
+	
+.gnb:after {
+	content: " ";
+	display: block;
+	clear: both
+}	
+
+.gnb h1 {
+	float: left;
+	padding: 20px 0 0 20px
+}
+
+.gnb ul {
+	float: right;
+	padding: 10px 8px
+}
+
+.gnb ul li {
+    color: #141414;
+	float: left;
+	position: relative;
+	z-index: 1;
+	padding-left: 1px;
+	background: url(mdd_gnb.png) no-repeat left center
+}
+
+.gnb ul li:first-child {
+	background: none
+}
+
+.gnb ul li a {
+	display: block;
+	text-align: center;
+	color: #141414;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.gnb ul li a span,
+.btn_playnow span {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: -1
+}
+
+.gnb ul li.m_privacy a { width: 174px; background-position: center 10px }
+.gnb ul li.m_privacy a:hover, .gnb ul li.m_privacy a.selected { background-position: center -30px }
+
+.gnb ul li.m_terms a { width: 190px; background-position: center -70px }
+.gnb ul li.m_terms a:hover, .gnb ul li.m_terms a.selected { background-position: center -110px }
+
+.gnb ul li.m_howToPlay a { width: 148px; background-position: center -150px }
+.gnb ul li.m_howToPlay a:hover, .gnb ul li.m_howToPlay a.selected { background-position: center -190px }
+
+.gnb ul li.m_faq a { width: 96px; background-position: center -230px }
+.gnb ul li.m_faq a:hover, .gnb ul li.m_faq a.selected { background-position: center -270px }
+
+.gnb ul li.m_gdpr a { width: 96px; background-position: center -306px }
+.gnb ul li.m_gdpr a:hover, .gnb ul li.m_gdpr a.selected { background-position: center -345px }
+
+.btn_playnow {
+	position: absolute;
+	display: block;
+	top: 150px;
+	left: 0;
+	width: 275px;
+	height: 60px
+}
+
+/************************************* privacy & terms *************************************/
+#contents {
+	width: 900px;
+	margin: -30px auto 0;
+	padding: 37px 30px 50px;
+	background-color: #EDEBEB
+}
+
+#contents h2 {
+	height: 62px;
+	font-size: 38px;
+	color: #ffcc00;
+	background: url(bg_h2_dot.png) repeat-x left bottom
+}
+
+#contents .section {
+}
+
+#contents .section h3 {
+	font-size: 20px;
+	color: #141414;
+	margin: 28px 0 18px
+}
+
+#contents .section p {
+	color: #141414;
+	margin-bottom: 18px
+}
+
+#contents .section ul {
+	padding-bottom: 10px
+}
+
+#contents .section li {
+    color: #141414;
+	margin-bottom: 8px;
+	padding-left: 24px;
+}
+
+#contents .section a {
+	color: #141414;
+	text-decoration: underline
+}
+
+
